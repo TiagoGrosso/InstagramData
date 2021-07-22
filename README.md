@@ -169,13 +169,6 @@ All the requests to a page will require the use of a Page ID. To find out what t
         console.log(response.getIgPageId());
     });
     ```
-
-### Development
-If you want to help fixing a bug or adding a new feature you can run this package in your machine and try using your local fork in your project.
-You have to change the code and add tests for it. Now is explained how to develop
-First generate `src/Index.ts` file with the command `npm run cti`.
-Then run `npm
-
 ## Release Process
 
 Releases of this lib should be very incremental. When a new resource is supported a release will be issued soon after without waiting to pile up new features to do big releases.

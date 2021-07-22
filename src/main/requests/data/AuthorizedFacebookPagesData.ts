@@ -1,14 +1,15 @@
 export interface FacebookPage {
   id: string
-  name: string
+  name: string,
+  accessToken: string
 }
 
 /**
  * Interface to represent the data regarding the list of Facebook
  * pages this user has authorized to your app.
  *
- * @author Tiago Grosso <tiagogrosso99@gmail.com>
- * @since 1.0.0
+ * @author Andres Gutierrez <andres99@gmail.com>
+ * @since next.release
  */
 export interface AuthorizedFacebookPagesData {
   data: Array<FacebookPage>

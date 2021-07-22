@@ -2,10 +2,10 @@ import { AbstractResponse } from '../../AbstractResponse';
 import { AuthorizedFacebookPagesData, FacebookPage } from '../../data/AuthorizedFacebookPagesData';
 
 /**
- * Class that represents a response from a Get Me request.
+ * Class that represents a response of user's Facebook pages
  *
- * @author Tiago Grosso <tiagogrosso99@gmail.com>
- * @since 0.3.0
+ * @author Andres Gutierrez <andres99@gmail.com>
+ * @since next.release
  */
 export class GetAuthorizedFacebookPagesResponse extends AbstractResponse<AuthorizedFacebookPagesData> {
     /**
@@ -14,6 +14,6 @@ export class GetAuthorizedFacebookPagesResponse extends AbstractResponse<Authori
      * @returns the page id of the user that made the request.
      */
     public authorizedFacebookPages(): Array<FacebookPage> {
-        return this.data.data.map(page => ({ id: page.id, name: page.name }));
+        return this.data.data
     }
 }
