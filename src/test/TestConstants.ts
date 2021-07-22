@@ -222,12 +222,10 @@ export class TestConstants {
     /**
      * A dummy me data object.
      */
-    static readonly ME_DATA: MeData = {
-        instagram_business_account: {
-            id: 'page_ig_id',
-        },
+    static readonly ME_DATA: MeData = [{
+        name: 'Page Name',
         id: 'page_id',
-    };
+    }];
 
     /**
      * A dummy lifetime metric data.
